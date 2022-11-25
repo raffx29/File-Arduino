@@ -71,19 +71,19 @@ void loop() {
 if (humTanah > 21 && ldr > 500) {
     digitalWrite(relay1, LOW);
     digitalWrite(relay2, LOW);
-    Serial.println("KIPAS ON LAMPU ON");
+    Serial.println("SOIL ON LAMPU ON");
   } else if (humTanah < 21 && ldr > 500) {
     digitalWrite(relay1, LOW);
     digitalWrite(relay2, HIGH);
-    Serial.println("KIPAS OFF LAMPU ON");
+    Serial.println("SOIL OFF LAMPU ON");
   } else if (humTanah > 21 && ldr < 500) {
     digitalWrite(relay1, HIGH);
     digitalWrite(relay2, LOW);
-    Serial.println("KIPAS ON LAMPU OFF");
+    Serial.println("SOIL ON LAMPU OFF");
   } else if (humTanah < 21 && ldr < 500) {
     digitalWrite(relay1, HIGH);
     digitalWrite(relay2, HIGH);
-    Serial.println("KIPAS OFF LAMPU OFF");
+    Serial.println("SOIL OFF LAMPU OFF");
   }
   
 }
